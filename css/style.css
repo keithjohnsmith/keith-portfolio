@@ -623,3 +623,61 @@ a {
 .letter-spacing {
   letter-spacing: .2rem;
   color: rgba(255, 255, 255, 0.5) !important; }
+
+
+  .slider-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    z-index: 998;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .img-slider {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Optional: Add styling for navigation buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    width: auto;
+    margin-top: -25px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  
+  .next {
+    right: 10px;
+    border-radius: 3px 0 0 3px;
+    margin-right: -25px;
+  }
+  .prev {
+    left: 10px;
+    border-radius: 0 3px 3px 0;
+    margin-left: 10px;
+  }
+  /* Optional: Add styling for navigation button hover effect */
+  .prev:hover, .next:hover {
+    background-color: rgb(255,102,0);
+  }
