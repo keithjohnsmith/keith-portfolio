@@ -334,3 +334,13 @@
 
 })();
 
+// Section for downloading my CV
+function downloadCV() {
+	const link = document.createElement('a');
+	link.href = 'downloadable/Keith Smith Resume 16-4.pdf';
+	link.download = 'KeithSmithCV.pdf';
+	link.click();
+  }
+
+const downloadButton = document.getElementById('download-cv-btn');
+downloadButton.addEventListener('click', downloadCV);
